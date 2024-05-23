@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+<body>
+    <%- include('./partials/headerProducts') %>
+    <main>
+        <div class="contenedor_main">
+            <h2 class="sesion">Crear Producto</h2>
+            <form method="GET">
+                <label>Nombre</label>
+                <input class="input_form" type="text" name="nombre">
+                <label>Descripción</label>
+                <input class="input_form" type="text" name="descripcion" required>
+                <label>Ficha Técnica</label>
+                <input class="input_form" type="text" name="ficha_tecnica" required>
+                <label>Imagen</label>
+                <input class="input_form" type="file" name="imagen_producto" required>
+                <label>Selecciona una categoría</label>
+                <select class="input_form" name="categoria" required>
+                    <option value="electrica">Guitarra Eléctrica</option>
+                    <option value="acustica">Guitarra Acustica</option>
+                    <option value="bajo">Bajo</option>
+                    <option value="accessorio">Accessorios</option>
+                </select>
+                <label>Color</label>
+                <input class="input_form" type="text" name="color" required>
+                <label>Precio</label>
+                <input class="input_form" type="text" name="precio" required>
+                <div class="botones">
+                    <input class="enviar" type="submit" value="Crear Producto">
+                </div>
+            </form>
+
+            <a href="/register">
+                <p class="form">¿Ya tienes una cuenta?</p>
+            </a>
+        </div>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

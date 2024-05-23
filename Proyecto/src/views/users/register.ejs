@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+<body>
+    <%- include('./partials/headerUser') %>
+    <main>
+        <div class="contenedor_main">
+            <h2 class="sesion">Crear una Cuenta</h2>
+            <form method="POST">
+                <label>Nombre Completo</label>
+                <input class="input_form" type="text">
+                <label>Usuario</label>
+                <input class="input_form" type="text">
+                <label>Email</label>
+                <input class="input_form" type="email">
+                <label>Contraseña</label>
+                <input class="input_form" type="password">
+                <div class="recuerdame">
+                    <input type="checkbox">He leído y acepto la Política de Privacidad
+                </div>
+                <div class="botones">
+                    <input class="enviar" type="submit">
+                    <input class="cancelar" type="reset">
+                </div>
+            </form>
+
+            <a href="/register">
+                <p class="form">¿Ya tienes una cuenta?</p>
+            </a>
+        </div>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

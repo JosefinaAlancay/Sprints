@@ -74,7 +74,7 @@ a:hover {
     text-decoration-color: var(--color-button-hover);
 }
 
-input {
+input{
     margin: auto;
     border-radius: 5px;
 }

@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--color-text)
+}
+
+:root {
+    --color-header-footer: #181717;
+    --color-background: #f8f2f2;
+    --color-button: #9d9ab4;
+    --color-button-hover: #8276da;
+    --color-price: #5bcaa5;
+    --color-title: #d2b48c;
+    --color-text: #f7f5f5bd;
+}
+
+/*HEADER*/
+header,
+footer {
+    background-color: var(--color-header-footer);
+    color: var(--color-text);
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo_img {
+    display: none;
+}
+
+header h4 {
+    color: var(--color-title);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.cuenta {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.navegacion {
+    background-color: #2a2929;
+    border: 1px solid #2a2929;
+    border-radius: 9px;
+    padding: 5px 0;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    padding: 5px 0;
+}
+
+li {
+    margin-right: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+a:hover {
+    color: var(--color-button-hover);
+    text-decoration-color: var(--color-button-hover);
+}
+
+
+input {
+    margin: auto;
+    border-radius: 5px;
+    color:black;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor_main {
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 25px;
+}
+
+.sesion {
+    color: var(--color-button);
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+
+}
+
+form {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+label {
+    color: black;
+}
+
+.recuerdame {
+    display: flex;
+    color: black;
+    gap: 9px;
+    margin-top: 10px;
+}
+
+
+form .input_form {
+    padding: 10px;
+    border-color: var(--color-button);
+    width: 100%;
+    border-radius: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.enviar,
+.cancelar {
+    width: 75%;
+    background-color: var(--color-button);
+    color: white;
+}
+
+/*FOOTER*/
+.contenedor_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenedor_footer h4 {
+    color: var(--color-title);
+}
+
+.informacion,
+.contacto,
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px
+}
+
+/*Media Query*/
+
+@media (max-width: 575px) {
+    .contenedor_main {
+        margin: auto;
+        width: 70%;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: center;
+        padding: 11px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /*Header*/
+    .navegacion {
+        display: flex;
+        justify-content: center;
+        padding: 11px;
+    }
+
+
+    .contenedor_main {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*Header*/
+    header .logo_img {
+        display: block;
+        width: 30%;
+        border-radius: 50%;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        gap: 10px;
+        justify-content: start;
+    }
+
+    .logo h4 {
+        font-size: 20px;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+    }
+
+    .contenedor_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: center;
+        padding: 11px;
+    }
+    /*Main*/
+
+    .contenedor_main {
+        width: 70%;
+        margin: auto;
+    }
+
+    form {
+        padding-top: 40px;
+        margin: auto;
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .recuerdame {
+        padding: 10px 0;
+    }
+
+    .enviar,
+    .cancelar {
+        padding: 20px;
+    }
+
+    /*Footer*/
+
+    .contenedor_footer {
+        flex-direction: row;
+        justify-content: space-around
+    }
+
+    .redes,
+    .informacion,
+    .contacto {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .iconos {
+        padding-top: 10px;
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    /*Header*/
+    header .logo_img {
+        display: block;
+        width: 30%;
+        border-radius: 50%;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        gap: 40px;
+        justify-content: end;
+    }
+
+    .logo h4 {
+        font-size: 40px;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 0;
+        gap:15%;
+    }
+
+    .contenedor_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .search input {
+       width: 170%;
+       padding: 10px;
+    }
+
+    .cuenta{
+        font-size: 30px;
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    ul{
+        gap:100px;
+    }
+
+
+    /*Main*/
+
+    main{
+        padding:50px 0;
+
+    }
+    .contenedor_main{
+        width: 60%;
+        margin: auto;
+    }
+
+    form{
+        margin: auto;
+    }
+
+    label{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+
+    input.input_form{
+        padding:20px;
+        width: 100%;
+        border: 2px solid black;
+    }
+
+    .recuerdame{
+        font-size: 20px;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .enviar,.cancelar{
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+
+    /*Footer*/
+    .contenedor_footer {
+        flex-direction: row;
+        justify-content: space-around
+    }
+
+    .redes,
+    .informacion,
+    .contacto {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .redes h4,
+    .informacion h4,
+    .contacto h4{
+        font-size: 30px;
+    }
+
+    .iconos {
+        padding-top: 10px;
+        font-size: 30px;
+    }
+
+}

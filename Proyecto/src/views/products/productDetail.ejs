@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+<body>
+    <%- include('./partials/headerProducts') %>
+    <main>
+        <div class="contenedor_main">
+            <div class="detalleProducto">
+                <div class="detalle">
+                    <img class="imagenDetalle_producto" src="images/GuitarraFender.jpg" alt="imagen-producto">
+                    <div class="prueba">
+                        <h3>Nombre Producto</h3>
+                        <div class="precio">
+                            <p>Decuento</p>
+                            <p class="descuento">$250.000</p>
+                            <p>Precio</p>
+                            <div class="off">
+                                <p class="off">$100.000</p>
+                                <p class="off_p">40% OFF</p>
+                            </div>
+                        </div>
+                        <div class="comprar">
+                            <input type="submit" value="Comprar Ahora">
+                            <input type="submit" value="Agregar al Carrito">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="especificaciones">
+                <div class="descripcion">
+                    <p>Descripción</p>
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+                <div class="fichaTecnica">
+                    <p>Ficha Técnica</p>
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/recomendacion') %>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+
+</html>
