@@ -8,17 +8,22 @@
     <main>
         <div class="contenedor_main">
             <h2 class="sesion">Iniciar Sesión</h2>
-            <form method="POST">
-                <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="Contraseña">
-                <div class="recuerdame">
-                    <input type="checkbox">Recuerdame
+            <% if (typeof error !== 'undefined') { %>
+                <div class="error">
+                    <p><%= error %></p>
                 </div>
-                <input class="enviar" type="submit">
+            <% } %>
+            <form method="POST" action="login">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <div class="recuerdame">
+                    <input type="checkbox" name="remember">Recuerdame
+                </div>
+                <input class="enviar" type="submit" value="Iniciar Sesión">
             </form>
             <div class="contraseña">
                 <p>¿Olvidaste tu contraseña?</p>
-                <a href="/register">
+                <a href="/users/register">
                     <p>Crear Cuenta</p>
                 </a>
             </div>

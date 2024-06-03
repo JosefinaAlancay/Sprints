@@ -9,16 +9,16 @@
         <div class="contenedor_main">
             <div class="detalleProducto">
                 <div class="detalle">
-                    <img class="imagenDetalle_producto" src="images/GuitarraFender.jpg" alt="imagen-producto">
+                    <img class="imagenDetalle_producto" src="/images/<%= product.image %>" alt="imagen-producto">
                     <div class="prueba">
-                        <h3>Nombre Producto</h3>
+                        <h3><%= product.name %></h3>
                         <div class="precio">
-                            <p>Decuento</p>
-                            <p class="descuento">$250.000</p>
+                            <p>Descuento</p>
+                            <p class="descuento">$<%= product.discountedPrice %></p>
                             <p>Precio</p>
                             <div class="off">
-                                <p class="off">$100.000</p>
-                                <p class="off_p">40% OFF</p>
+                                <p class="off">$<%= product.price %></p>
+                                <p class="off_p"><%= product.discount %> OFF</p>
                             </div>
                         </div>
                         <div class="comprar">
@@ -32,10 +32,12 @@
                 <div class="descripcion">
                     <p>Descripción</p>
                     <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    <p><%= product.description %></p>
                 </div>
                 <div class="fichaTecnica">
                     <p>Ficha Técnica</p>
                     <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    <p><%= product.technicalDetails %></p>
                 </div>
             </div>
         </div>

@@ -3,35 +3,61 @@
 
 <%- include('./partials/head') %>
 
-<body>
-    <%- include('./partials/headerUser') %>
-    <main>
-        <div class="contenedor_main">
-            <h2 class="sesion">Crear una Cuenta</h2>
-            <form method="POST">
-                <label>Nombre Completo</label>
-                <input class="input_form" type="text">
-                <label>Usuario</label>
-                <input class="input_form" type="text">
-                <label>Email</label>
-                <input class="input_form" type="email">
-                <label>Contraseña</label>
-                <input class="input_form" type="password">
-                <div class="recuerdame">
-                    <input type="checkbox">He leído y acepto la Política de Privacidad
+    <body>
+        <%- include('./partials/headerUser') %>
+            <main>
+                <h2>Register</h2>
+                <div class="contenedor_main">
+                    <form>
+                        <div class="User">
+                            <div class="form_group">
+                                <label>Full Name</label>
+                                <input class="form_input" type="text" name="full_name">
+                            </div>
+                            <div class="form_group">
+                                <label>Adress</label>
+                                <input class="form_input" type="text" name="address">
+                            </div>
+                            <div class="form_group">
+                                <label>Postal Code</label>
+                                <input class="form_input" type="text" name="postal_code">
+                            </div>
+                        </div>
+                        <div class="User">
+                            <div class="form_group">
+                                <label>Email</label>
+                                <input class="form_input" type="email" name="email">
+                            </div>
+                            <div class="form_group">
+                                <label>Username</label>
+                                <input class="form_input" type="text" name="username">
+                            </div>
+                            <div class="form_group">
+                                <label>Password</label>
+                                <input class="form_input" type="text" name="password">
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <label>Choose your avatar</label>
+                            <input class="input_image" type="file" name="avatar">
+                        </div>
+                        <button type="submit">Register</button>
+                        <div class="forgot_password">
+                            <div class="remember">
+                                <input class="box" type="checkbox">
+                                <p>Remember</p>
+                            </div>
+                            <div class="forgot_password">
+                                <p><a href=" ">¿Forgot Password?</a></p>
+                            </div>
+                            <div class="login">
+                                <p><a href=" ">Do you already have an account</a></p>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="botones">
-                    <input class="enviar" type="submit">
-                    <input class="cancelar" type="reset">
-                </div>
-            </form>
-
-            <a href="/register">
-                <p class="form">¿Ya tienes una cuenta?</p>
-            </a>
-        </div>
-    </main>
-    <%- include('./partials/footer') %>
-</body>
+            </main>
+            <%- include('./partials/footer') %>
+    </body>
 
 </html>

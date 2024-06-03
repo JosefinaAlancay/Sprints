@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Juan Pérez",
+    "email": "juan@example.com",
+    "password": "password123",
+    "avatar": "avatar1.jpg",
+    "category": "customer"
+  },
+  {
+    "id": 2,
+    "name": "María Rodríguez",
+    "email": "maria@example.com",
+    "password": "securepass",
+    "avatar": "avatar2.jpg",
+    "category": "customer"
+  },
+  {
+    "id": 3,
+    "name": "Luis González",
+    "email": "luis@example.com",
+    "password": "luispass",
+    "avatar": "avatar3.jpg",
+    "category": "customer"
+  },
+  {
+    "id": 4,
+    "name": "Ana Martínez",
+    "email": "ana@example.com",
+    "password": "anapassword",
+    "avatar": "avatar4.jpg",
+    "category": "admin"
+  },
+  {
+    "id": 5,
+    "name": "Pedro Sánchez",
+    "email": "pedro@example.com",
+    "password": "pedropass",
+    "avatar": "avatar5.jpg",
+    "category": "customer"
+  }
+]

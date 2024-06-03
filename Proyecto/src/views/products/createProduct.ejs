@@ -3,42 +3,57 @@
 
 <%- include('./partials/head') %>
 
-<body>
-    <%- include('./partials/headerProducts') %>
-    <main>
-        <div class="contenedor_main">
-            <h2 class="sesion">Crear Producto</h2>
-            <form method="GET">
-                <label>Nombre</label>
-                <input class="input_form" type="text" name="nombre">
-                <label>Descripción</label>
-                <input class="input_form" type="text" name="descripcion" required>
-                <label>Ficha Técnica</label>
-                <input class="input_form" type="text" name="ficha_tecnica" required>
-                <label>Imagen</label>
-                <input class="input_form" type="file" name="imagen_producto" required>
-                <label>Selecciona una categoría</label>
-                <select class="input_form" name="categoria" required>
-                    <option value="electrica">Guitarra Eléctrica</option>
-                    <option value="acustica">Guitarra Acustica</option>
-                    <option value="bajo">Bajo</option>
-                    <option value="accessorio">Accessorios</option>
-                </select>
-                <label>Color</label>
-                <input class="input_form" type="text" name="color" required>
-                <label>Precio</label>
-                <input class="input_form" type="text" name="precio" required>
-                <div class="botones">
-                    <input class="enviar" type="submit" value="Crear Producto">
+    <body>
+        <%- include('./partials/headerProducts') %>
+            <main>
+                <h2>Create Your Product</h2>
+                <div class="contenedor_main">
+                    <form>
+                        <div class="principal">
+                            <div class="form_group">
+                                <label>Nombre Producto</label>
+                                <input class="form_input" type="text" name="nombre_producto">
+                            </div>
+                            <div class="form_group">
+                                <label>Choose one Category</label>
+                                <select name="category">
+                                    <option value="1">Electric Guitar</option>
+                                    <option value="2">Acoustic Guitar</option>
+                                    <option value="3">Bass Guitar</option>
+                                    <option value="4">Accessory</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="specifications">
+                            <div class="form_group">
+                                <label>Color</label>
+                                <input class="form_input" type="text" name="color">
+                            </div>
+                            <div class="form_group">
+                                <label>Brand</label>
+                                <input class="form_input" type="text" name="brand">
+                            </div>
+                            <div class="form_group">
+                                <label>Material</label>
+                                <input class="form_input" type="text" name="material">
+                            </div>
+                            <div class="form_group">
+                                <label>String Number</label>
+                                <input class="form_input" type="number" name="string">
+                            </div>
+                        </div>
+                        <div class="description">
+                            <label>Description</label>
+                            <input class="description_input" type="text" name="description">
+                        </div>
+                        <div class="product_image">
+                            <label>Product Image</label>
+                            <input class="input_image"  type="file" name="product_image">
+                        </div>
+                        <button type="submit">Create Product</button>
+                    </form>
                 </div>
-            </form>
-
-            <a href="/register">
-                <p class="form">¿Ya tienes una cuenta?</p>
-            </a>
-        </div>
-    </main>
-    <%- include('./partials/footer') %>
-</body>
-
+            </main>
+            <%- include('./partials/footer') %>
+    </body>
 </html>
