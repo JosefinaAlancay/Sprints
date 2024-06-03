@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<%- include('./partials/head') %>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/createProduct.css">
+    <title>Document</title>
+</head>
     <body>
-        <%- include('./partials/headerProducts') %>
+        <%- include('../partials/headerProducts.ejs') %>
             <main>
                 <h2>Create Your Product</h2>
                 <div class="contenedor_main">
-                    <form>
+                    <form action="/products/create" method="post" enctype="multipart/form-data">
                         <div class="principal">
                             <div class="form_group">
                                 <label>Nombre Producto</label>
-                                <input class="form_input" type="text" name="nombre_producto">
+                                <input class="form_input" type="text" name="name">
+                                <label>precio</label>
+                                <input class="form_input" type="text" name="price">
+                                <label> discount</label>
+                                <input class="form_input" type="text" name="discount">
                             </div>
                             <div class="form_group">
                                 <label>Choose one Category</label>
-                                <select name="category">
+                                <select name="categoryId">
                                     <option value="1">Electric Guitar</option>
                                     <option value="2">Acoustic Guitar</option>
                                     <option value="3">Bass Guitar</option>

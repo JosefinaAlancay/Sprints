@@ -29,8 +29,8 @@ module.exports = (sequelize, DataTypes) => {
     const Client = sequelize.define(alias, cols, config);
 
     Client.associate = (models) => {
-        Client.hasOne(models.Account, {
-            as: "account",
+        Client.hasMany(models.Account, {
+            as: "accounts",
             foreignKey: "clientId"
         });
     };

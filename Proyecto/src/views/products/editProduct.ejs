@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+
+<body>
+    <%- include('./partials/headerProducts') %>
+    <main>
+        <div class="contenedor_main">
+            <h2>Edit Product</h2>
+            <div class="formulario">
+                <form action="/products/<%= product.id %>" method="POST" enctype="multipart/form-data">
+                    <!-- Utiliza un campo oculto para enviar el método PUT o PATCH -->
+                    <input type="hidden" name="_method" value="PUT">
+                    <div class="form-group">
+                        <label for="name">Product Name</label>
+                        <input type="text" id="name" name="name" value="<%= product.name %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" name="price" value="<%= product.price %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="discount">Discount</label>
+                        <input type="number" id="discount" name="discount" value="<%= product.discount %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryId">Category</label>
+                        <select id="categoryId" name="categoryId">
+                            <% productsCategories.forEach(category => { %>
+                            <option value="<%= category.id %>" <%= product.productCategoryId === category.id ? 'selected' : '' %>><%= category.name %></option>
+                            <% }); %>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Image</label>
+                        <input type="file" id="image" name="image">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description"><%= product.description %></textarea>
+                    </div>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

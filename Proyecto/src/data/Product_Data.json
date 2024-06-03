@@ -1,226 +1,230 @@
 [
-  {
-    "id": "1",
-    "name": "Guitarra Acústica Fender",
-    "description": "Una guitarra acústica de alta calidad para músicos aficionados y profesionales.",
-    "specifications": {
-      "brand": "Fender",
-      "string_number": 6,
-      "material": "Caoba",
-      "color": "Natural"
-    },
-    "category": "Acoustic Guitar",
-    "price": {
-      "base_price": 1000,
-      "discount": 100,
-      "final_price": 900
-    },
-    "image": "guitarra_acustica_fender.jpg"
+ {
+  "id": "1",
+  "name": "Guitarra Acústica Fender",
+  "description": "Una guitarra acústica de alta calidad para músicos aficionados y profesionales.",
+  "specifications": {
+   "brand": "Fender",
+   "string_number": 6,
+   "material": "Caoba",
+   "color": "Natural"
   },
-  {
-    "id": "2",
-    "name": "Guitarra Eléctrica Gibson Les Paul",
-    "brand": "Gibson",
-    "description": "Una guitarra eléctrica icónica conocida por su tono cálido y rico.",
-    "specifications": {
-      "string_number": 6,
-      "body_shape": "Singlecut",
-      "material": "Caoba",
-      "neck_material": "Caoba",
-      "fingerboard_material": "Palisandro",
-      "color": "Negro"
-    },
-    "category": "Electric Guitar",
-    "price": {
-      "base_price": 2000,
-      "discount": 0,
-      "final_price": 2000
-    },
-    "image": "guitarra_electrica_gibson_les_paul.jpg",
-    "colors": [
-      "Negro",
-      "Sunburst",
-      "Azul"
-    ]
+  "category": "Acoustic Guitar",
+  "price": {
+   "base_price": 1000,
+   "discount": 100,
+   "final_price": 900
   },
-  {
-    "id": "3",
-    "name": "Bajo Fender Precision Bass",
-    "brand": "Fender",
-    "description": "El primer bajo eléctrico del mundo, conocido por su tono profundo y contundente.",
-    "specifications": {
-      "string_number": 4,
-      "body_shape": "Precision",
-      "material": "Alder",
-      "neck_material": "Arce",
-      "fingerboard_material": "Arce",
-      "color": "Blanco"
-    },
-    "category": "Bass",
-    "price": {
-      "base_price": 1500,
-      "discount": 200,
-      "final_price": 1300
-    },
-    "image": "bajo_fender_precision_bass.jpg",
-    "colors": [
-      "Blanco",
-      "Negro",
-      "Sunburst"
-    ]
+  "image": "guitarra_acustica_fender.jpg"
+ },
+ {
+  "id": "2",
+  "name": "Guitarra Eléctrica Gibson Les Paul",
+  "brand": "Gibson",
+  "description": "Una guitarra eléctrica icónica conocida por su tono cálido y rico.",
+  "specifications": {
+   "string_number": 6,
+   "body_shape": "Singlecut",
+   "material": "Caoba",
+   "neck_material": "Caoba",
+   "fingerboard_material": "Palisandro",
+   "color": "Negro"
   },
-  {
-    "id": "4",
-    "name": "Guitarra Acústica Yamaha FG800",
-    "brand": "Yamaha",
-    "description": "Una guitarra acústica asequible y de alta calidad para principiantes.",
-    "specifications": {
-      "string_number": 6,
-      "body_shape": "Dreadnought",
-      "material": "Abeto",
-      "neck_material": "Nato",
-      "fingerboard_material": "Palisandro",
-      "color": "Natural"
-    },
-    "category": "Acoustic Guitar",
-    "price": {
-      "base_price": 300,
-      "discount": 0,
-      "final_price": 300
-    },
-    "image": "guitarra_acustica_yamaha_fg800.jpg",
-    "colors": [
-      "Natural",
-      "Negro"
-    ]
+  "category": "Electric Guitar",
+  "price": {
+   "base_price": 2000,
+   "discount": 0,
+   "final_price": 2000
   },
-  {
-    "id": "5",
-    "name": "Guitarra Eléctrica Ibanez RG550",
-    "brand": "Ibanez",
-    "description": "Una guitarra eléctrica rápida y versátil perfecta para la guitarra solista.",
-    "specifications": {
-      "string_number": 6,
-      "body_shape": "Superstrat",
-      "material": "Tilo",
-      "neck_material": "Arce",
-      "fingerboard_material": "Arce",
-      "color": "Azul"
-    },
-    "category": "Electric Guitar",
-    "price": {
-      "base_price": 1200,
-      "discount": 100,
-      "final_price": 1100
-    },
-    "image": "guitarra_electrica_ibanez_rg550.jpg",
-    "colors": [
-      "Azul",
-      "Verde"
-    ]
+  "image": "guitarra_electrica_gibson_les_paul.jpg",
+  "colors": [
+   "Negro",
+   "Sunburst",
+   "Azul"
+  ]
+ },
+ {
+  "id": "3",
+  "name": "Bajo Fender Precision Bass",
+  "brand": "Fender",
+  "description": "El primer bajo eléctrico del mundo, conocido por su tono profundo y contundente.",
+  "specifications": {
+   "string_number": 4,
+   "body_shape": "Precision",
+   "material": "Alder",
+   "neck_material": "Arce",
+   "fingerboard_material": "Arce",
+   "color": "Blanco"
   },
-  {
-    "name": "Cuerdas de Guitarra",
-    "brand": "D'Addario",
-    "description": "Juego de cuerdas de guitarra acústica de alta calidad.",
-    "specifications": {
-      "string_number": 6,
-      "material": "Bronce",
-      "color": "Bronce"
-    },
-    "category": "Accessory",
-    "price": {
-      "base_price": 10,
-      "discount": 0,
-      "final_price": 10
-    },
-    "image": "cuerdas_guitarra.jpg",
-    "colors": [
-      "Bronce"
-    ]
+  "category": "Bass",
+  "price": {
+   "base_price": 1500,
+   "discount": 200,
+   "final_price": 1300
   },
-  {
-    "name": "Estuche para Guitarra",
-    "brand": "SKB",
-    "description": "Estuche rígido para proteger tu guitarra eléctrica mientras viajas.",
-    "specifications": {
-      "compatibility": "Guitarra Eléctrica"
-    },
-    "category": "Accessory",
-    "price": {
-      "base_price": 100,
-      "discount": 0,
-      "final_price": 100
-    },
-    "image": "estuche_guitarra.jpg",
-    "colors": [
-      "Negro"
-    ]
+  "image": "bajo_fender_precision_bass.jpg",
+  "colors": [
+   "Blanco",
+   "Negro",
+   "Sunburst"
+  ]
+ },
+ {
+  "id": "4",
+  "name": "Guitarra Acústica Yamaha FG800",
+  "brand": "Yamaha",
+  "description": "Una guitarra acústica asequible y de alta calidad para principiantes.",
+  "specifications": {
+   "string_number": 6,
+   "body_shape": "Dreadnought",
+   "material": "Abeto",
+   "neck_material": "Nato",
+   "fingerboard_material": "Palisandro",
+   "color": "Natural"
   },
-  {
-    "name": "Afinador Cromático",
-    "brand": "Korg",
-    "description": "Afinador cromático compacto y preciso para instrumentos de cuerda.",
-    "specifications": {
-      "tuning_modes": [
-        "Cromático",
-        "Guitarra",
-        "Bajo",
-        "Ukelele"
-      ]
-    },
-    "category": "Accessory",
-    "price": {
-      "base_price": 20,
-      "discount": 0,
-      "final_price": 20
-    },
-    "image": "afinador_cromatico.jpg",
-    "colors": [
-      "Negro",
-      "Blanco"
-    ]
+  "category": "Acoustic Guitar",
+  "price": {
+   "base_price": 300,
+   "discount": 0,
+   "final_price": 300
   },
-  {
-    "name": "Púas para Guitarra",
-    "brand": "Fender",
-    "description": "Pack de 12 púas de guitarra de diferentes grosores y materiales.",
-    "specifications": {
-      "material": "Celuloide",
-      "thickness": [
-        "Thin",
-        "Medium",
-        "Heavy"
-      ]
-    },
-    "category": "Accessory",
-    "price": {
-      "base_price": 5,
-      "discount": 0,
-      "final_price": 5
-    },
-    "image": "puas_guitarra.jpg",
-    "colors": [
-      "Varios"
-    ]
+  "image": "guitarra_acustica_yamaha_fg800.jpg",
+  "colors": [
+   "Natural",
+   "Negro"
+  ]
+ },
+ {
+  "id": "5",
+  "name": "Guitarra Eléctrica Ibanez RG550",
+  "brand": "Ibanez",
+  "description": "Una guitarra eléctrica rápida y versátil perfecta para la guitarra solista.",
+  "specifications": {
+   "string_number": 6,
+   "body_shape": "Superstrat",
+   "material": "Tilo",
+   "neck_material": "Arce",
+   "fingerboard_material": "Arce",
+   "color": "Azul"
   },
-  {
-    "name": "Cable para Guitarra",
-    "brand": "Monster",
-    "description": "Cable de guitarra de alta calidad con conectores bañados en oro.",
-    "specifications": {
-      "length": "10 pies",
-      "connector_type": "TS a TS"
-    },
-    "category": "Accessory",
-    "price": {
-      "base_price": 30,
-      "discount": 0,
-      "final_price": 30
-    },
-    "image": "cable_guitarra.jpg",
-    "colors": [
-      "Negro"
-    ]
-  }
+  "category": "Electric Guitar",
+  "price": {
+   "base_price": 1200,
+   "discount": 100,
+   "final_price": 1100
+  },
+  "image": "guitarra_electrica_ibanez_rg550.jpg",
+  "colors": [
+   "Azul",
+   "Verde"
+  ]
+ },
+ {
+  "name": "Cuerdas de Guitarra",
+  "brand": "D'Addario",
+  "description": "Juego de cuerdas de guitarra acústica de alta calidad.",
+  "specifications": {
+   "string_number": 6,
+   "material": "Bronce",
+   "color": "Bronce"
+  },
+  "category": "Accessory",
+  "price": {
+   "base_price": 10,
+   "discount": 0,
+   "final_price": 10
+  },
+  "image": "cuerdas_guitarra.jpg",
+  "colors": [
+   "Bronce"
+  ]
+ },
+ {
+  "name": "Estuche para Guitarra",
+  "brand": "SKB",
+  "description": "Estuche rígido para proteger tu guitarra eléctrica mientras viajas.",
+  "specifications": {
+   "compatibility": "Guitarra Eléctrica"
+  },
+  "category": "Accessory",
+  "price": {
+   "base_price": 100,
+   "discount": 0,
+   "final_price": 100
+  },
+  "image": "estuche_guitarra.jpg",
+  "colors": [
+   "Negro"
+  ]
+ },
+ {
+  "name": "Afinador Cromático",
+  "brand": "Korg",
+  "description": "Afinador cromático compacto y preciso para instrumentos de cuerda.",
+  "specifications": {
+   "tuning_modes": [
+    "Cromático",
+    "Guitarra",
+    "Bajo",
+    "Ukelele"
+   ]
+  },
+  "category": "Accessory",
+  "price": {
+   "base_price": 20,
+   "discount": 0,
+   "final_price": 20
+  },
+  "image": "afinador_cromatico.jpg",
+  "colors": [
+   "Negro",
+   "Blanco"
+  ]
+ },
+ {
+  "name": "Púas para Guitarra",
+  "brand": "Fender",
+  "description": "Pack de 12 púas de guitarra de diferentes grosores y materiales.",
+  "specifications": {
+   "material": "Celuloide",
+   "thickness": [
+    "Thin",
+    "Medium",
+    "Heavy"
+   ]
+  },
+  "category": "Accessory",
+  "price": {
+   "base_price": 5,
+   "discount": 0,
+   "final_price": 5
+  },
+  "image": "puas_guitarra.jpg",
+  "colors": [
+   "Varios"
+  ]
+ },
+ {
+  "name": "Cable para Guitarra",
+  "brand": "Monster",
+  "description": "Cable de guitarra de alta calidad con conectores bañados en oro.",
+  "specifications": {
+   "length": "10 pies",
+   "connector_type": "TS a TS"
+  },
+  "category": "Accessory",
+  "price": {
+   "base_price": 30,
+   "discount": 0,
+   "final_price": 30
+  },
+  "image": "cable_guitarra.jpg",
+  "colors": [
+   "Negro"
+  ]
+ },
+ {
+  "id": 1717437480799,
+  "image": "default-img.png"
+ }
 ]

@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         orderId: {
             type: DataTypes.TINYINT,
-            allowNull: false
+            allowNull: true
         },
         productCategoryId: {
             type: DataTypes.TINYINT,

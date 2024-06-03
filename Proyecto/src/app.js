@@ -39,6 +39,5 @@ app.use('/users', userRoutes);
 
 app.listen(port, () => {
     console.log(`Servidor Corriendo en http://localhost:${port}`);
-    db.sequelize.sync({force:true});
 });
  

@@ -18,14 +18,15 @@ module.exports = {
     // Crear cuentas
     const accounts = await Account.bulkCreate([
       { username: 'johndoe', password: 'password1', email: 'johndoe@example.com', avatar: 'avatar1.png', clientId: clients[0].id, accountCategoryId: accountCategories[1].id },
-      { username: 'janesmith', password: 'password2', email: 'janesmith@example.com', avatar: 'avatar2.png', clientId: clients[1].id, accountCategoryId: accountCategories[1].id }
+      { username: 'janesmith', password: 'password2', email: 'janesmith@example.com', avatar: 'avatar2.png', clientId: clients[1].id, accountCategoryId: accountCategories[1].id },
+      { username: 'janesmith', password: 'password2', email: 'janesmith@example.com', avatar: 'avatar2.png', clientId: clients[1].id, accountCategoryId: accountCategories[1].id },
     ]);
 
     // Crear categorías de productos
     const productCategories = await ProductCategory.bulkCreate([
-      { name: 'Guitars' },
       { name: 'Electric Guitar' },
       { name: 'Acustic Guitar' },
+      { name: 'Bass' },
       { name: 'Accesories' },
     ]);
 

@@ -1,19 +1,29 @@
-const express = require('express');
-const router = express.Router(); 
-const productController = require('../controllers/productController');
+const express = require("express");
+const router = express.Router();
+const { uploadProducts } = require('../middlewares/multerConfig');
 
-//listar productos/
-//router.get('/',productController.listproducts);
+
+const {
+  listProducts,
+  createProductForm,
+  createProduct,
+  getProductById,
+  editProductForm
+
+} = require("../controllers/productController");
+
+//Listar Productos
+router.get("/", listProducts);
 
 //CrearProductos
-router.get('/create',productController.createProduct);
-//router.post('/create',productController.createProduct);
+router.get('/create',createProductForm);
+router.post('/create',uploadProducts.single('product_image'), createProduct);
 
 //Mostrar por productos por id
-//router.get('/detail/:id',productController.productDetail);
+router.get('/detail/:id',getProductById);
 
 //Editar y Borrar producto
-//router.put('/detail/:id',productController.editProduct);
+router.get('/edit/:id',editProductForm);
 //router.delete('/detail/:id',productController.deleteProduct);
 
 module.exports= router; 
